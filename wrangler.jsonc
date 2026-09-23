@@ -118,8 +118,10 @@
     // 此处填部署 origin，如 https://your-project.edgeone.app
     // 留空则自动使用当前请求 origin（同一部署自调用）；跨域或本地调试才需显式设置。
     // "EO_KV_URLS": "",
-    // wrangler.jsonc
+    // wrangler.jsonc 注意一下是我添加的
+    "JWT_SECRET": "secret",
     "name": "openlist-worker",
+    //注意以上是我添加的
     // ── MySQL（DB_DRIVER=mysql 时，方式一 / 方式二 二选一）─────────────────
     //
     // 方式一：连接串
@@ -167,4 +169,18 @@
   // ▶ 方案 D：Blob / MySQL
   //   Blob 由 EdgeOne / ESA 自动注入，无需配置；
   //   MySQL 通过 Secret 配置 MYSQL_URLS（或 MYSQL_HOST 等分项）。
+  //注意一下是我添加的
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_id": "5a3fe79c-ea80-44ae-9b5d-7eccafc36a46"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "11f76ddd6ee4485090adee87cee9370e"
+    }
+  ],
+  //以上是我自行添加的
 }
