@@ -118,7 +118,8 @@
     // 此处填部署 origin，如 https://your-project.edgeone.app
     // 留空则自动使用当前请求 origin（同一部署自调用）；跨域或本地调试才需显式设置。
     // "EO_KV_URLS": "",
-
+    // wrangler.jsonc
+    "name": "openlist-worker",
     // ── MySQL（DB_DRIVER=mysql 时，方式一 / 方式二 二选一）─────────────────
     //
     // 方式一：连接串
