@@ -119,8 +119,10 @@
     // 留空则自动使用当前请求 origin（同一部署自调用）；跨域或本地调试才需显式设置。
     // "EO_KV_URLS": "",
     // wrangler.jsonc 注意一下是我添加的
-    "JWT_SECRET": "secret",
-    "name": "openlist-worker",
+    "JWT_SECRET": "",
+    "DB_CIPHER": "none",
+    "DB_FORMAT": "sql",
+    "DB_DRIVER": "d1"
     //注意以上是我添加的
     // ── MySQL（DB_DRIVER=mysql 时，方式一 / 方式二 二选一）─────────────────
     //
